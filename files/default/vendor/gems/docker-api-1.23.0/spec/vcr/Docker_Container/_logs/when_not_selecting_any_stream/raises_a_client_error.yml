@@ -1,0 +1,178 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://192.168.99.100:2376/v1.16/containers/create
+    body:
+      encoding: UTF-8
+      string: '{"Cmd":"echo hello","Image":"debian:wheezy"}'
+    headers:
+      User-Agent:
+      - Swipely/Docker-API 1.23.0
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 201
+      message: 
+    headers:
+      Content-Type:
+      - application/json
+      Server:
+      - Docker/1.9.0 (linux)
+      Date:
+      - Wed, 18 Nov 2015 10:33:02 GMT
+      Content-Length:
+      - '90'
+    body:
+      encoding: UTF-8
+      string: |
+        {"Id":"7b6791832ac51c4cea702efda1c466026aa9a5d03484853de75f75ab8ea9ec2f","Warnings":null}
+    http_version: 
+  recorded_at: Wed, 18 Nov 2015 10:33:02 GMT
+- request:
+    method: get
+    uri: https://192.168.99.100:2376/v1.16/containers/7b6791832ac51c4cea702efda1c466026aa9a5d03484853de75f75ab8ea9ec2f/logs
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Swipely/Docker-API 1.23.0
+      Content-Type:
+      - text/plain
+  response:
+    status:
+      code: 400
+      message: 
+    headers:
+      Content-Type:
+      - text/plain; charset=utf-8
+      Server:
+      - Docker/1.9.0 (linux)
+      Date:
+      - Wed, 18 Nov 2015 10:33:02 GMT
+      Content-Length:
+      - '52'
+    body:
+      encoding: UTF-8
+      string: |
+        Bad parameters: you must choose at least one stream
+    http_version: 
+  recorded_at: Wed, 18 Nov 2015 10:33:02 GMT
+- request:
+    method: get
+    uri: https://192.168.99.100:2376/v1.16/containers/7b6791832ac51c4cea702efda1c466026aa9a5d03484853de75f75ab8ea9ec2f/logs
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Swipely/Docker-API 1.23.0
+      Content-Type:
+      - text/plain
+  response:
+    status:
+      code: 400
+      message: 
+    headers:
+      Content-Type:
+      - text/plain; charset=utf-8
+      Server:
+      - Docker/1.9.0 (linux)
+      Date:
+      - Wed, 18 Nov 2015 10:33:02 GMT
+      Content-Length:
+      - '52'
+    body:
+      encoding: UTF-8
+      string: |
+        Bad parameters: you must choose at least one stream
+    http_version: 
+  recorded_at: Wed, 18 Nov 2015 10:33:02 GMT
+- request:
+    method: get
+    uri: https://192.168.99.100:2376/v1.16/containers/7b6791832ac51c4cea702efda1c466026aa9a5d03484853de75f75ab8ea9ec2f/logs
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Swipely/Docker-API 1.23.0
+      Content-Type:
+      - text/plain
+  response:
+    status:
+      code: 400
+      message: 
+    headers:
+      Content-Type:
+      - text/plain; charset=utf-8
+      Server:
+      - Docker/1.9.0 (linux)
+      Date:
+      - Wed, 18 Nov 2015 10:33:02 GMT
+      Content-Length:
+      - '52'
+    body:
+      encoding: UTF-8
+      string: |
+        Bad parameters: you must choose at least one stream
+    http_version: 
+  recorded_at: Wed, 18 Nov 2015 10:33:02 GMT
+- request:
+    method: get
+    uri: https://192.168.99.100:2376/v1.16/containers/7b6791832ac51c4cea702efda1c466026aa9a5d03484853de75f75ab8ea9ec2f/logs
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Swipely/Docker-API 1.23.0
+      Content-Type:
+      - text/plain
+  response:
+    status:
+      code: 400
+      message: 
+    headers:
+      Content-Type:
+      - text/plain; charset=utf-8
+      Server:
+      - Docker/1.9.0 (linux)
+      Date:
+      - Wed, 18 Nov 2015 10:33:02 GMT
+      Content-Length:
+      - '52'
+    body:
+      encoding: UTF-8
+      string: |
+        Bad parameters: you must choose at least one stream
+    http_version: 
+  recorded_at: Wed, 18 Nov 2015 10:33:02 GMT
+- request:
+    method: delete
+    uri: https://192.168.99.100:2376/v1.16/containers/7b6791832ac51c4cea702efda1c466026aa9a5d03484853de75f75ab8ea9ec2f
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Swipely/Docker-API 1.23.0
+      Content-Type:
+      - text/plain
+  response:
+    status:
+      code: 204
+      message: 
+    headers:
+      Server:
+      - Docker/1.9.0 (linux)
+      Date:
+      - Wed, 18 Nov 2015 10:33:02 GMT
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 18 Nov 2015 10:33:02 GMT
+recorded_with: VCR 3.0.0

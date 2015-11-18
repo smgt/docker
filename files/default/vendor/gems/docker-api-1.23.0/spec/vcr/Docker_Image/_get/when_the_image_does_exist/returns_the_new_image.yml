@@ -1,0 +1,33 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://192.168.99.100:2376/v1.16/images/debian:wheezy/json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Swipely/Docker-API 1.23.0
+      Content-Type:
+      - text/plain
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      Content-Type:
+      - application/json
+      Server:
+      - Docker/1.9.0 (linux)
+      Date:
+      - Wed, 18 Nov 2015 10:36:14 GMT
+      Content-Length:
+      - '1228'
+    body:
+      encoding: UTF-8
+      string: |
+        {"Id":"e2e4a15f0f0522c4b6a2f826599733e9182fea99b13124a3d07eec58a8a7f1c4","RepoTags":["debian:wheezy"],"RepoDigests":[],"Parent":"141ed44bf00341d7c27f87dab5b16347aab8557256eaa8a7f598d377be2e48d4","Comment":"","Created":"2015-11-10T00:33:30.561527112Z","Container":"24257db4823a8f53906fc88da7890f215ead18b37599c83f0aa47f1db3a74257","ContainerConfig":{"Hostname":"f259a376263c","Domainname":"","User":"","AttachStdin":false,"AttachStdout":false,"AttachStderr":false,"Tty":false,"OpenStdin":false,"StdinOnce":false,"Env":null,"Cmd":["/bin/sh","-c","#(nop) CMD [\"/bin/bash\"]"],"Image":"999d7b043fef3f662277501e5c4d431e1b70a15a34170173beea988d3c48f9ed","Volumes":null,"WorkingDir":"","Entrypoint":null,"OnBuild":null,"Labels":{}},"DockerVersion":"1.9.0","Author":"","Config":{"Hostname":"f259a376263c","Domainname":"","User":"","AttachStdin":false,"AttachStdout":false,"AttachStderr":false,"Tty":false,"OpenStdin":false,"StdinOnce":false,"Env":null,"Cmd":["/bin/bash"],"Image":"999d7b043fef3f662277501e5c4d431e1b70a15a34170173beea988d3c48f9ed","Volumes":null,"WorkingDir":"","Entrypoint":null,"OnBuild":null,"Labels":{}},"Architecture":"amd64","Os":"linux","Size":0,"VirtualSize":84892344,"GraphDriver":{"Name":"aufs","Data":null}}
+    http_version: 
+  recorded_at: Wed, 18 Nov 2015 10:36:13 GMT
+recorded_with: VCR 3.0.0

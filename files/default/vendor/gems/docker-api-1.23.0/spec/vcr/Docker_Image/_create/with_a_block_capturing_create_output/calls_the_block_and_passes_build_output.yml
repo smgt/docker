@@ -1,0 +1,33 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://192.168.99.100:2376/v1.16/images/create?fromImage=tianon%2Ftrue
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Swipely/Docker-API 1.23.0
+      Content-Type:
+      - text/plain
+      X-Registry-Auth:
+      - eyJ1c2VybmFtZSI6ImRlYmJpZV9kb2NrZXIiLCJwYXNzd29yZCI6IioqKioqKioqKioqKioiLCJlbWFpbCI6ImRlYmJpZV9kb2NrZXJAZXhhbXBsZS5jb20ifQ==
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      Content-Type:
+      - application/json
+      Server:
+      - Docker/1.9.0 (linux)
+      Date:
+      - Wed, 18 Nov 2015 10:36:13 GMT
+    body:
+      encoding: UTF-8
+      string: "{\"status\":\"Pulling repository docker.io/tianon/true\"}\r\n{\"errorDetail\":{\"message\":\"Authentication
+        is required.\"},\"error\":\"Authentication is required.\"}\r\n"
+    http_version: 
+  recorded_at: Wed, 18 Nov 2015 10:36:13 GMT
+recorded_with: VCR 3.0.0

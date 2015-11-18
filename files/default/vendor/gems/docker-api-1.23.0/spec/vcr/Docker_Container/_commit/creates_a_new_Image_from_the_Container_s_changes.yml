@@ -1,0 +1,173 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://192.168.99.100:2376/v1.16/containers/create
+    body:
+      encoding: UTF-8
+      string: '{"Cmd":["true"],"Image":"debian:wheezy"}'
+    headers:
+      User-Agent:
+      - Swipely/Docker-API 1.23.0
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 201
+      message: 
+    headers:
+      Content-Type:
+      - application/json
+      Server:
+      - Docker/1.9.0 (linux)
+      Date:
+      - Wed, 18 Nov 2015 10:33:38 GMT
+      Content-Length:
+      - '90'
+    body:
+      encoding: UTF-8
+      string: |
+        {"Id":"d2b81e3ca54c962c49235cd6e7ff6903e43b87954e4bd822259927987b3feb7b","Warnings":null}
+    http_version: 
+  recorded_at: Wed, 18 Nov 2015 10:33:37 GMT
+- request:
+    method: post
+    uri: https://192.168.99.100:2376/v1.16/containers/d2b81e3ca54c962c49235cd6e7ff6903e43b87954e4bd822259927987b3feb7b/start
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      User-Agent:
+      - Swipely/Docker-API 1.23.0
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 204
+      message: 
+    headers:
+      Server:
+      - Docker/1.9.0 (linux)
+      Date:
+      - Wed, 18 Nov 2015 10:33:38 GMT
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 18 Nov 2015 10:33:38 GMT
+- request:
+    method: post
+    uri: https://192.168.99.100:2376/v1.16/containers/d2b81e3ca54c962c49235cd6e7ff6903e43b87954e4bd822259927987b3feb7b/wait
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Swipely/Docker-API 1.23.0
+      Content-Type:
+      - text/plain
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      Content-Type:
+      - application/json
+      Server:
+      - Docker/1.9.0 (linux)
+      Date:
+      - Wed, 18 Nov 2015 10:33:38 GMT
+      Content-Length:
+      - '17'
+    body:
+      encoding: UTF-8
+      string: |
+        {"StatusCode":0}
+    http_version: 
+  recorded_at: Wed, 18 Nov 2015 10:33:38 GMT
+- request:
+    method: post
+    uri: https://192.168.99.100:2376/v1.16/commit?container=d2b81e3c
+    body:
+      encoding: UTF-8
+      string: 'null'
+    headers:
+      User-Agent:
+      - Swipely/Docker-API 1.23.0
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 201
+      message: 
+    headers:
+      Content-Type:
+      - application/json
+      Server:
+      - Docker/1.9.0 (linux)
+      Date:
+      - Wed, 18 Nov 2015 10:33:38 GMT
+      Content-Length:
+      - '74'
+    body:
+      encoding: UTF-8
+      string: |
+        {"Id":"36a87e0ebe65b9c20eea899a515d575b85b74f6efa0b57009a7e2dc8e734f8e0"}
+    http_version: 
+  recorded_at: Wed, 18 Nov 2015 10:33:38 GMT
+- request:
+    method: delete
+    uri: https://192.168.99.100:2376/v1.16/containers/d2b81e3ca54c962c49235cd6e7ff6903e43b87954e4bd822259927987b3feb7b
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Swipely/Docker-API 1.23.0
+      Content-Type:
+      - text/plain
+  response:
+    status:
+      code: 204
+      message: 
+    headers:
+      Server:
+      - Docker/1.9.0 (linux)
+      Date:
+      - Wed, 18 Nov 2015 10:33:38 GMT
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 18 Nov 2015 10:33:38 GMT
+- request:
+    method: delete
+    uri: https://192.168.99.100:2376/v1.16/images/36a87e0ebe65b9c20eea899a515d575b85b74f6efa0b57009a7e2dc8e734f8e0
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Swipely/Docker-API 1.23.0
+      Content-Type:
+      - text/plain
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      Content-Type:
+      - application/json
+      Server:
+      - Docker/1.9.0 (linux)
+      Date:
+      - Wed, 18 Nov 2015 10:33:38 GMT
+      Content-Length:
+      - '81'
+    body:
+      encoding: UTF-8
+      string: |
+        [{"Deleted":"36a87e0ebe65b9c20eea899a515d575b85b74f6efa0b57009a7e2dc8e734f8e0"}]
+    http_version: 
+  recorded_at: Wed, 18 Nov 2015 10:33:38 GMT
+recorded_with: VCR 3.0.0

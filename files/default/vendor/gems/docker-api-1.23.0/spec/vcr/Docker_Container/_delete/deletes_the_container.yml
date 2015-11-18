@@ -1,0 +1,88 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://192.168.99.100:2376/v1.16/containers/create
+    body:
+      encoding: UTF-8
+      string: '{"Cmd":["ls"],"Image":"debian:wheezy"}'
+    headers:
+      User-Agent:
+      - Swipely/Docker-API 1.23.0
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 201
+      message: 
+    headers:
+      Content-Type:
+      - application/json
+      Server:
+      - Docker/1.9.0 (linux)
+      Date:
+      - Wed, 18 Nov 2015 10:33:28 GMT
+      Content-Length:
+      - '90'
+    body:
+      encoding: UTF-8
+      string: |
+        {"Id":"6082625455e42b4d516fae9549b4530df4437fc9b86b9c3a7f9fad1c2b4f3c76","Warnings":null}
+    http_version: 
+  recorded_at: Wed, 18 Nov 2015 10:33:28 GMT
+- request:
+    method: delete
+    uri: https://192.168.99.100:2376/v1.16/containers/6082625455e42b4d516fae9549b4530df4437fc9b86b9c3a7f9fad1c2b4f3c76?force=true
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Swipely/Docker-API 1.23.0
+      Content-Type:
+      - text/plain
+  response:
+    status:
+      code: 204
+      message: 
+    headers:
+      Server:
+      - Docker/1.9.0 (linux)
+      Date:
+      - Wed, 18 Nov 2015 10:33:28 GMT
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 18 Nov 2015 10:33:28 GMT
+- request:
+    method: get
+    uri: https://192.168.99.100:2376/v1.16/containers/json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Swipely/Docker-API 1.23.0
+      Content-Type:
+      - text/plain
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      Content-Type:
+      - application/json
+      Server:
+      - Docker/1.9.0 (linux)
+      Date:
+      - Wed, 18 Nov 2015 10:33:28 GMT
+      Content-Length:
+      - '769'
+    body:
+      encoding: UTF-8
+      string: |
+        [{"Id":"04b856837013e77dca79aa8f9e5f2f34b018920252026519e825fd568c75e51e","Names":["/registry"],"Image":"registry","ImageID":"1cb234ccb22b7897976cb8b95b6a502aacf5b606eef6eb1af000b7194a5293f4","Command":"docker-registry","Created":1447842779,"Ports":[{"IP":"0.0.0.0","PrivatePort":5000,"PublicPort":5000,"Type":"tcp"}],"Labels":{},"Status":"Up 28 seconds","HostConfig":{"NetworkMode":"default"}},{"Id":"83110e0cd19bb84a4dc3725b3cb54e5224cfdf38dd0b1d4efcdd27f04db93f65","Names":["/stoic_brown"],"Image":"redis","ImageID":"c08dd1f8fad9ff2622a1b5d74650a8e494ee380b74030e21584fea05079c2818","Command":"/entrypoint.sh redis-server","Created":1447842001,"Ports":[{"PrivatePort":6379,"Type":"tcp"}],"Labels":{},"Status":"Up 13 minutes","HostConfig":{"NetworkMode":"default"}}]
+    http_version: 
+  recorded_at: Wed, 18 Nov 2015 10:33:28 GMT
+recorded_with: VCR 3.0.0

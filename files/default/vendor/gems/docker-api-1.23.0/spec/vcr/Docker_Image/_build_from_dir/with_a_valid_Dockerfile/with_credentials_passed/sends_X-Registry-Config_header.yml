@@ -1,0 +1,67 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://192.168.99.100:2376/v1.16/build
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Swipely/Docker-API 1.23.0
+      Content-Type:
+      - application/tar
+      Transfer-Encoding:
+      - chunked
+      X-Registry-Config:
+      - eyJjb25maWdzIjp7Imh0dHBzOi8vaW5kZXguZG9ja2VyLmlvL3YxIjp7InVzZXJuYW1lIjoiZGViYmllX2RvY2tlciIsInBhc3N3b3JkIjoiKioqKioqKioqKioqKiIsImVtYWlsIjoiZGViYmllX2RvY2tlckBleGFtcGxlLmNvbSJ9fX0=
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      Content-Type:
+      - application/json
+      Server:
+      - Docker/1.9.0 (linux)
+      Date:
+      - Wed, 18 Nov 2015 10:36:24 GMT
+    body:
+      encoding: UTF-8
+      string: "{\"stream\":\"Step 1 : FROM debian:wheezy\\n\"}\r\n{\"stream\":\" ---\\u003e
+        e2e4a15f0f05\\n\"}\r\n{\"stream\":\"Step 2 : ADD . /\\n\"}\r\n{\"stream\":\"
+        ---\\u003e e752309dd5a9\\n\"}\r\n{\"stream\":\"Removing intermediate container
+        f31cb3335210\\n\"}\r\n{\"stream\":\"Successfully built e752309dd5a9\\n\"}\r\n"
+    http_version: 
+  recorded_at: Wed, 18 Nov 2015 10:36:24 GMT
+- request:
+    method: delete
+    uri: https://192.168.99.100:2376/v1.16/images/e752309dd5a9?noprune=true
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Swipely/Docker-API 1.23.0
+      Content-Type:
+      - text/plain
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      Content-Type:
+      - application/json
+      Server:
+      - Docker/1.9.0 (linux)
+      Date:
+      - Wed, 18 Nov 2015 10:36:24 GMT
+      Content-Length:
+      - '81'
+    body:
+      encoding: UTF-8
+      string: |
+        [{"Deleted":"e752309dd5a98123ebe7cc7da16c08a3711726cf35d7fad42e1cf91e16980af8"}]
+    http_version: 
+  recorded_at: Wed, 18 Nov 2015 10:36:24 GMT
+recorded_with: VCR 3.0.0

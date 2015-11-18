@@ -1,0 +1,33 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://192.168.99.100:2376/v1.16/images/create?fromImage=scratch
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Swipely/Docker-API 1.23.0
+      Content-Type:
+      - text/plain
+  response:
+    status:
+      code: 500
+      message: 
+    headers:
+      Content-Type:
+      - text/plain; charset=utf-8
+      Server:
+      - Docker/1.9.0 (linux)
+      Date:
+      - Wed, 18 Nov 2015 10:35:48 GMT
+      Content-Length:
+      - '29'
+    body:
+      encoding: UTF-8
+      string: |
+        'scratch' is a reserved name
+    http_version: 
+  recorded_at: Wed, 18 Nov 2015 10:35:48 GMT
+recorded_with: VCR 3.0.0

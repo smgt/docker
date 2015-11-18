@@ -1,0 +1,152 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://192.168.99.100:2376/v1.16/images/create?fromImage=debian%3Awheezy
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Swipely/Docker-API 1.23.0
+      Content-Type:
+      - text/plain
+  response:
+    status:
+      code: 200
+      message: 
+    headers:
+      Content-Type:
+      - application/json
+      Server:
+      - Docker/1.9.0 (linux)
+      Date:
+      - Wed, 18 Nov 2015 10:35:40 GMT
+    body:
+      encoding: UTF-8
+      string: "{\"status\":\"Pulling from library/debian\",\"id\":\"wheezy\"}\r\n{\"status\":\"Digest:
+        sha256:3f7d83b4da730d05888ed64217768b766cfaec599f981ca51879257c5ff5b8f7\"}\r\n{\"status\":\"Status:
+        Image is up to date for debian:wheezy\"}\r\n"
+    http_version: 
+  recorded_at: Wed, 18 Nov 2015 10:35:40 GMT
+- request:
+    method: get
+    uri: https://192.168.99.100:2376/v1.16/images/wheezy/json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Swipely/Docker-API 1.23.0
+      Content-Type:
+      - text/plain
+  response:
+    status:
+      code: 404
+      message: 
+    headers:
+      Content-Type:
+      - text/plain; charset=utf-8
+      Server:
+      - Docker/1.9.0 (linux)
+      Date:
+      - Wed, 18 Nov 2015 10:35:40 GMT
+      Content-Length:
+      - '22'
+    body:
+      encoding: UTF-8
+      string: |
+        No such image: wheezy
+    http_version: 
+  recorded_at: Wed, 18 Nov 2015 10:35:40 GMT
+- request:
+    method: get
+    uri: https://192.168.99.100:2376/v1.16/images/wheezy/json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Swipely/Docker-API 1.23.0
+      Content-Type:
+      - text/plain
+  response:
+    status:
+      code: 404
+      message: 
+    headers:
+      Content-Type:
+      - text/plain; charset=utf-8
+      Server:
+      - Docker/1.9.0 (linux)
+      Date:
+      - Wed, 18 Nov 2015 10:35:40 GMT
+      Content-Length:
+      - '22'
+    body:
+      encoding: UTF-8
+      string: |
+        No such image: wheezy
+    http_version: 
+  recorded_at: Wed, 18 Nov 2015 10:35:40 GMT
+- request:
+    method: get
+    uri: https://192.168.99.100:2376/v1.16/images/wheezy/json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Swipely/Docker-API 1.23.0
+      Content-Type:
+      - text/plain
+  response:
+    status:
+      code: 404
+      message: 
+    headers:
+      Content-Type:
+      - text/plain; charset=utf-8
+      Server:
+      - Docker/1.9.0 (linux)
+      Date:
+      - Wed, 18 Nov 2015 10:35:40 GMT
+      Content-Length:
+      - '22'
+    body:
+      encoding: UTF-8
+      string: |
+        No such image: wheezy
+    http_version: 
+  recorded_at: Wed, 18 Nov 2015 10:35:40 GMT
+- request:
+    method: get
+    uri: https://192.168.99.100:2376/v1.16/images/wheezy/json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Swipely/Docker-API 1.23.0
+      Content-Type:
+      - text/plain
+  response:
+    status:
+      code: 404
+      message: 
+    headers:
+      Content-Type:
+      - text/plain; charset=utf-8
+      Server:
+      - Docker/1.9.0 (linux)
+      Date:
+      - Wed, 18 Nov 2015 10:35:40 GMT
+      Content-Length:
+      - '22'
+    body:
+      encoding: UTF-8
+      string: |
+        No such image: wheezy
+    http_version: 
+  recorded_at: Wed, 18 Nov 2015 10:35:40 GMT
+recorded_with: VCR 3.0.0
